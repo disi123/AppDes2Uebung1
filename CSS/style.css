@@ -49,6 +49,38 @@ body {
     text-decoration: none;
 }
 
+#menu ul li:first-child a {
+    -webkit-border-top-left-radius: 6px;
+    -webkit-border-top-right-radius: 6px;
+}
+
+#menu ul li:last-child a {
+    -webkit-border-bottom-left-radius: 6px;
+    -webkit-border-bottom-right-radius: 6px;
+}
+
 #content, #sidebar {
     padding: 12px;
+}
+
+.button {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 4px 10px;
+    -webkit-border-radius: 5px;
+    background-image: -webkit-gradient(linear, left top, left bottom,
+    from(#7d828c),
+    color-stop(0.5, #303749),
+    color-stop(0.5, #121a2e),
+    to(#121a2e));
+    border: solid 1px rgba(79, 79, 79, 0.75);
+}
+
+.button:hover {
+    background-image: -webkit-gradient(linear, left top, left bottom,
+    from(#4286f5),
+    color-stop(0.5, #4286f5),
+    color-stop(0.5, #194fdb),
+    to(#194fdb));
 }
